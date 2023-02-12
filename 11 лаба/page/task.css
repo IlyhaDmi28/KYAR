@@ -1,0 +1,58 @@
+body{
+    font-family: 'Calibri';
+}
+
+head{
+    display: block;
+    color: black;
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    font-size: 35px; 
+}
+
+header{
+    color: rgb(255, 119, 77);
+    text-shadow: 1px 1px 5px rgb(255, 152, 121);
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+obzats{
+    display: block;
+
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+
+    padding: 10px;
+
+    text-align: left;
+    font-size: 25px;
+
+    border-radius: 2px;
+    border: 2px solid orange;
+
+
+}
+
+show{
+    display: inline;
+
+    border: 1px solid white;
+}
+
+end{
+    display: block;
+
+    text-shadow: 2px 2px 2px rgb(196, 196, 196);
+
+    margin-top: 550px;
+
+    text-align: center;
+    font-size: 18px;
+}
