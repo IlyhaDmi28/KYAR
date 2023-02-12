@@ -1,0 +1,44 @@
+ol{
+    font-size: 25px;
+}
+
+ul{
+    list-style: none;   
+    background-image: url(rr.ico);
+    background-repeat: repeat-y;
+    background-size: 28px;
+}
+
+.LOGO{
+    position: fixed;
+    right: 10px;
+    top: 5%;    
+}
+
+.Cr {
+margin-top: 0px; 
+}
+
+.Cr img{
+    float: left;
+    vertical-align: bottom;
+    border: 3px solid white;
+}
+
+.Radio{
+    text-align: right;
+    margin-top: 0px; 
+}
+
+.Radio img{
+    float: right;
+    vertical-align: bottom;
+    width: 300px;
+    height: 300px;
+    border: 3px solid white;
+}
+
+.ob {
+    margin: 0px 0px 0px 0px;
+}
+
