@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Calibri;
+            font-size: 35px;
+        }
+        .name{border: 4px solid black; margin-top: 8px;}
+        p{
+            
+            margin:  8px 4px 4px 4px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="name">
+            <p><span id="name0"></span></p>
+            <p><span id="family0"></span></p>
+        </div>
+        <div class="name">
+            <p><span id="name1"></span></p>
+            <p><span id="family1"></span></p>
+        </div>
+        <div class="name">
+            <p><span id="name2"></span></p>
+            <p><span id="family2"></span></p>
+        </div>
+        <div class="name">
+            <p><span id="name3"></span></p>
+            <p><span id="family3"></span></p>
+        </div>
+        <div class="name">
+            <p><span id="name4"></span></p>
+            <p><span id="family4"></span></p>
+        </div>
+    </div>
+    <script>
+        txt = "<student>";
+        txt = txt + "<name>Владимир</name>";
+        txt = txt + "<family>Юрьевич</family>";
+        txt = txt + "<name>Игорь</name>";
+        txt = txt + "<family>Андреевич</family>";
+        txt = txt + "<name>Илья</name>";
+        txt = txt + "<family>Игоревич</family>";
+        txt = txt + "<name>Анна</name>";
+        txt = txt + "<family>Сергеевна</family>";
+        txt = txt + "<name>Максим</name>";
+        txt = txt + "<family>Николаевич</family>";
+        txt = txt + "</student>";
+
+        if  (window.DOMParser){
+            parser = new DOMParser;
+            xmlDoc = parser.parseFromString(txt, "text/xml");
+        }
+        else{ //Internet Explorer
+            xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+            xmlDoc.async = false;
+            xmlDoc.loadXML(txt);
+        }
+
+        document.getElementById("name0").innerHTML = xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+        document.getElementById("family0").innerHTML = xmlDoc.getElementsByTagName("family")[0].childNodes[0].nodeValue;
+
+        document.getElementById("name1").innerHTML = xmlDoc.getElementsByTagName("name")[1].childNodes[0].nodeValue;
+        document.getElementById("family1").innerHTML = xmlDoc.getElementsByTagName("family")[1].childNodes[0].nodeValue;
+
+        document.getElementById("name2").innerHTML = xmlDoc.getElementsByTagName("name")[2].childNodes[0].nodeValue;
+        document.getElementById("family2").innerHTML = xmlDoc.getElementsByTagName("family")[2].childNodes[0].nodeValue;
+
+        document.getElementById("name3").innerHTML = xmlDoc.getElementsByTagName("name")[3].childNodes[0].nodeValue;
+        document.getElementById("family3").innerHTML = xmlDoc.getElementsByTagName("family")[3].childNodes[0].nodeValue;
+
+        document.getElementById("name4").innerHTML = xmlDoc.getElementsByTagName("name")[4].childNodes[0].nodeValue;
+        document.getElementById("family4").innerHTML = xmlDoc.getElementsByTagName("family")[4].childNodes[0].nodeValue;
+    </script>
+</body>
+</html>
