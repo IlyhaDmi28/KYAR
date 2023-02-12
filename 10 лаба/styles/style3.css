@@ -1,0 +1,62 @@
+.main{
+    display: grid;
+    justify-content: center;
+}
+
+.el0, .el1{
+    border: 3px solid orange;
+}
+
+.el0 
+{
+    margin-right: 20px;
+}
+
+.titles{
+    text-align: center;
+}
+
+.Audio audio, .Video video{
+    display: block;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-device-width: 1260px) {
+    .main{
+        grid-template-columns: 250px 1000px;
+        grid-template-rows: auto;
+    }
+
+    .vid{
+        width: 800px;
+    }
+
+    .tb{
+        display: block;
+    }
+
+}
+
+@media (max-device-width: 1260px) {
+
+    .tb{
+        display: none;
+    }
+
+    #check:hover+.tb, .tb:hover{
+        display: block;
+    }
+
+    .vid{
+        width: 400px;
+    }
+
+    .main{
+        grid-template-rows: auto auto;
+        grid-template-columns: 600px;
+    }
+}

@@ -1,0 +1,32 @@
+.grid{
+    display: grid;
+    grid-template-columns: 45px 150px 85px;
+    grid-template-rows: 50px 150px 30px;
+    grid-gap: 10px;
+    width: 275px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+}
+
+.grid div{
+    background-color: rgb(62, 224, 41);
+    border-radius: 5px;
+    padding: 3px;
+    line-height: 15px;
+}
+
+.cal0{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.cal1{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.cal4{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}

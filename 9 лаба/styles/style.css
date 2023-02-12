@@ -1,0 +1,30 @@
+.grid1 {
+    display:grid;
+    grid-template-areas:
+    "x x x"
+    "y z w";
+    grid-template-columns: 290px 290px 290px;
+    grid-template-rows: 47px 47px 47px;
+    grid-gap: 5px;
+    text-align: center;
+    margin-left: 350px;
+    font-size: 30px;
+    }
+
+div[style] {border: 3px solid black;}
+
+.grid2 {
+    display:grid;
+    grid-template-areas:
+    "x y z r c a"
+    "x y z r w a";
+    grid-template-columns: 27px 250px 250px 250px 250px 27px;
+    grid-template-rows: 190px 190px 190px 190px 190px 190px;
+    grid-gap: 5px;
+    text-align: center;
+    margin-left: 250px;
+    font-size: 25px;
+    }
+
+.grid2>div {border: 2px solid black;}
+.f {margin-right: 30px;}   
