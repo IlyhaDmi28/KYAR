@@ -1,0 +1,8 @@
+td, th {
+    padding: 0px 0px 0px 0px;
+    }
+
+tr :first-child, th{
+    background-color: blueviolet;
+    color: white;
+}

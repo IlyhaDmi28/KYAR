@@ -1,0 +1,14 @@
+table {
+    empty-cells: hide;
+    text-align: center;
+    margin: 10px auto;
+    }
+
+p {margin-top: 0px; margin-bottom: 0px;}
+
+td:nth-child(2) {background-color: rgb(0, 225, 255); }
+td:nth-child(3) {background-color: purple; }
+td:nth-child(4) {background-color: rgb(94, 255, 0); }
+
+th {background-color: darkblue; color:white;}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Покупка ноутбука</title>
+        <link rel="shortcut icon" href="source/HLico.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div style="background-color: gray; padding-top: 15px; padding-bottom: 15px;">
+            <span style="padding-left: 15px; font-family: Calibri; font-size: 20px;">Оформить заказ</span>
+        </div>
+        <br><br><br>
+        <div>
+            <div style="float: left;">
+                <span>Имя</span> 
+                <br><br><br><br>
+                <span>Телефон</span>
+                <br><br><br><br>
+                <span>Адрес</span>
+                <br><br><br><br>
+                <br><br><br><br>
+                <br><br><br><br>
+                <span>Метод покупки</span>
+                <br><br><br><br>
+                <br><br>
+                <span>Выбирете день</span>
+                <br><br><br><br>
+                <span>Дополнительное</span>
+            </div>
+            <div style="margin-left: 300px;">
+                <form>
+                    <input type="text" placeholder="Имя" style="width: 225px;">
+                    <br><br><br><br>
+                    <input type="tel" placeholder="+375..." style="width: 225px;">
+                    <br><br><br><br>
+                    <textarea name="InputAddress" id="address" cols="30" rows="10" style="width: 225px;"></textarea>
+                    <br><br><br>
+                    <input type="checkbox" style="margin-right: 10px;">Наличными<br>
+                    <input type="checkbox" style="margin-right: 10px;">Картой<br>
+                    <input type="checkbox" style="margin-right: 10px;">Без наличный расчёт
+                    <br><br><br><br>
+                    <select name="dayselect" id="ds">
+                        <option value="1">понедельник</option>
+                        <option value="2">вторник</option>
+                        <option value="3">среда</option>
+                        <option value="4">четверг</option>
+                        <option value="5">пятница</option>
+                        <option value="6">суббота</option>
+                        <option value="7">воскресенье</option>
+                    </select>
+                    <br><br><br><br>
+                    <input type="checkbox" style="margin-right: 10px;">перед доставкой свяжитесь со мной<br>
+                    <input type="checkbox" style="margin-right: 10px;">курьер должен быть трезвый
+                    <br><br><br><br>
+                    <button id="but" onclick="OnClick();">Подтвердить</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            function OnClick(){
+                alert("Не работае)");
+            }
+        </script>
+        <center style="margin-top: 100px;"><a href="lab2.html">Назад</a></center>
+    </body>
+</html>
